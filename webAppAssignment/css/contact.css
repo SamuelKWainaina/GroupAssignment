@@ -1,0 +1,59 @@
+@import './styles.css';
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .h1 {
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  input,
+  textarea {
+    padding: 1em 2em;
+    background-color: #3F3D56;
+    outline: none;
+    border: none;
+    border-radius: 16px;
+    margin-top: 2em;
+    color: #F4F0F1;
+  }
+  
+  input[type="submit"] {
+    background-color: #EA4638;
+    color: white;
+    border: none;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #EA4638;
+  }
+  
+input::placeholder, textarea::placeholder{
+    color: #F4F0F1;
+    font: 1em 'Inter',sans-serif;
+
+}
+.h1{
+    font-family: 'Inter', sans-serif;
+    font-size: 4em;
+    margin: 0%;
+    font-weight: 900;
+}

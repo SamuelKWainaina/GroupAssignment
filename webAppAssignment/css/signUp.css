@@ -1,0 +1,161 @@
+@import './styles.css';
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80vh;
+}
+
+.signUpSvg{
+    width: 28em;
+    height: 28em;
+}
+
+
+
+.signUpDiv{
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    justify-content: flex-start;
+}
+form input{
+    padding: 1em 2em;
+    background-color: #3F3D56;
+    outline: none;
+    border: none;
+    border-radius: 16px;
+    margin-top: 2em;
+    color: #F4F0F1;
+}
+form input[type="email"], input[type="password"], #username, #title, #blogContent{
+    width: 90%;
+    
+}
+
+#email{
+    background-image: url('../images/mail.svg');
+    background-repeat: no-repeat;
+    background-position: 95% center;
+}
+
+#password{
+    background-image: url('../images/pass.svg');
+    background-repeat: no-repeat;
+    background-position: 95% center;    
+}
+
+form input::placeholder, #blogContent::placeholder{
+    color: #F4F0F1;
+    font: 0.75em 'Inter',sans-serif;
+
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#Fname{
+    margin-right: 2.4em;
+    background-image: url('../images/profile.svg');
+    background-repeat: no-repeat;
+    background-position: 90% center;
+}
+
+#Lname{
+    margin-left: 2.4em;
+    background-image: url('../images/profile.svg');
+    background-repeat: no-repeat;
+    background-position: 90% center;
+}
+
+.formText{
+    font-weight: 900;
+    font-family: 'Inter',sans-serif;
+    margin: 0px 6px;
+}
+.h1{
+    font-size: 2.6em;
+    
+}
+
+.h5{
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+}
+.h1 span{
+    font-size: 1.4em;
+    color: #EA4638;
+    margin: 0px;
+}
+
+#btn{
+    background-color: #EA4638;
+    border: none;
+    padding: 0.7em 2.8em;
+    margin: 1em;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1em;
+    font-weight: 900;
+    color: white;
+    border-radius: 1em;
+}
+#btn:hover{
+    cursor: pointer;
+}
+span a{
+    color: #EA4638;
+}
+
+#blogContent{
+    padding: 1em 2em;
+    background-color: #3F3D56;
+    outline: none;
+    border: none;
+    border-radius: 16px;
+    margin-top: 2em;
+    color: #F4F0F1;
+}
+@media (max-width: 950px){
+    .content{
+        flex-direction: column;
+    }
+    form input{
+        width: 20%;
+    }
+    .signUpDiv{
+        flex-direction: column;
+        width: 50%;
+        position: absolute;
+    }
+    .signUpSvg{
+        display: none;
+    }
+    .h1 span{
+        display: none;
+    }
+    .h1{
+        font-size: 2em;
+    }
+    .h5{
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 660px){
+    form{
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    form input{
+        width: 90%;
+    }
+}
+
+@media(max-width: 610px){
+    .formText{
+        display: none;
+    }
+}

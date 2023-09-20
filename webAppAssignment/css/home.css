@@ -1,0 +1,124 @@
+@import './styles.css';
+
+.design {
+    position: absolute;
+    width: 400px;
+    height: 80vh;
+    top: 0.2em;
+    left: 0em;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 7em;
+    line-height: 2em;
+    color: white;
+    /* identical to box height */
+
+    letter-spacing: 0.1em;
+    transform: rotate(-90deg);
+    text-shadow: 
+    -3px -3px 0 black, 
+    3px -3px 0 black, 
+    -3px 3px 0 black, 
+    3px 3px 0 black;
+}
+#submit{
+        background-color: #EA4638;
+        border: none;
+        padding: 1em 4em;
+        margin: 1em;
+        font-family: 'Inter', sans-serif;
+        font-size: 1.1em;
+        font-weight: 900;
+        color: white;
+        margin-right: 2.4em;
+        background-image: url('../images/getStarted.svg');
+        background-repeat: no-repeat;
+        background-position: 95% center;
+}
+
+#submit:hover{
+    cursor: pointer;
+}
+.switcher{
+    height: 12em;
+    width: 20em;
+    position: absolute;
+    right: 6em;
+    top: 6em;
+    transform: rotate(10deg);
+}
+
+.custom{
+    position: absolute;
+    height: 22em;
+    width: 30.1em;
+    bottom: 0px;
+    right: 0px;
+}
+
+.h1{
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    text-align: left;
+    font-size: 4em;
+    margin: 0%;
+}
+
+.contentText{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.4em;
+    font-weight: 500;
+
+}
+
+.bolded{
+    font-weight: 900;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+    margin-left: 12em;
+    margin-right: 2em;
+
+}
+
+
+@media (max-width: 900px){
+    .h1{
+        font-size: 3em;
+    }
+    .custom{
+        width: 24em;
+        height: 18em;
+    }
+    .switcher{
+        height: 10em;
+        width: 16em;
+    }
+}
+
+@media(max-width: 820px){
+    .switcher{
+        right: 1em;
+    }
+    .custom{
+        width: 20em;
+        height: 16em
+    }
+}
+
+@media (max-width: 735px){
+    .switcher{
+        display: none;
+    }
+    .custom{
+        display: none;
+    }
+    .main{
+        width: 70%;
+    }
+}

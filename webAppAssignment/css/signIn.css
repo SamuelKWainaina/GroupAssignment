@@ -1,0 +1,98 @@
+@import './styles.css';
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80vh;
+}
+
+.signInSvg{
+    width: 28em;
+    height: 28em;
+}
+
+
+
+.formDiv{
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    justify-content: center;
+}
+
+form input{
+    width: 100%;
+    padding: 1em 2em;
+    background-color: #3F3D56;
+    outline: none;
+    border: none;
+    border-radius: 16px;
+    margin-top: 2em;
+    color: #F4F0F1;
+}
+
+#email{
+    background-image: url('../images/mail.svg');
+    background-repeat: no-repeat;
+    background-position: 95% center;
+}
+
+#password{
+    background-image: url('../images/pass.svg');
+    background-repeat: no-repeat;
+    background-position: 95% center;    
+}
+
+form input::placeholder{
+    color: #F4F0F1;
+    font: 0.75em 'Inter',sans-serif;
+
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.formText{
+    font-weight: 900;
+    font-family: 'Inter',sans-serif;
+    margin: 0px 6px;
+}
+.h1{
+    font-size: 2.6em;
+    
+}
+
+.h5{
+    font-size: 1.2em;
+}
+
+#btn{
+    background-color: #EA4638;
+    border: none;
+    padding: 0.8em 1.6em;
+    margin: 1em;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1em;
+    font-weight: 900;
+    color: white;
+    border-radius: 1em;
+}
+#btn:hover{
+    cursor: pointer;
+}
+span a{
+    color: #EA4638;
+}
+
+@media (max-width: 850px){
+    .signInSvg{
+        display: none;
+    }
+    .content{
+        flex-direction: column;
+    }
+}

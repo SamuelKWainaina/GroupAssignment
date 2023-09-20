@@ -1,0 +1,110 @@
+@import './styles.css';
+*{
+    box-sizing: border-box;
+}
+.founderSvg{
+    position: absolute;
+    width:20em;
+    height: 30em;
+    top: -42px;
+    right: 0px;
+    z-index: 1;
+}
+.main{
+    width: 450px;
+    margin: 4em;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.salutation{
+    font-family: 'Inter', sans-serif;
+    font-size: 4em;
+    font-weight: 900;
+    margin: 0%;
+    color: #130F31;
+}
+
+.info{
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    color: #67676D;
+}
+
+#knowMore{
+    background-color:#EA4638;
+    border-radius: 8px;
+    padding: 8px 16px;
+    color: #ffffff;
+    font-weight: 600;
+    margin-right: 1em;
+}
+
+#collabo{
+    border: 2px solid #EA4638;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-left: 1em;
+}
+
+.founderBtns{
+    margin: 1em;
+    width: 100%;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+    background-color: #D9D9D9;
+    margin: 0.5em 1em;
+    border-radius: 2em;
+    padding: 2em;
+}
+
+.skill{
+    width: 20%;
+}
+
+.skillName{
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 1em;
+}
+
+.skillDesc{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 0.8em;
+    color: #272727;
+}
+
+.navBar{
+    position: relative;
+    z-index: 2;
+}
+
+
+@media (max-width: 820px){
+
+    .founderSvg{
+        display: none;
+    }
+    .main{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 520px){
+    .skills{
+        flex-direction: column;
+        padding: 1em;
+    }
+    .skill{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+}

@@ -1,7 +1,7 @@
 <?php
 
 // Connect syntax
-$connect = mysqli_connect("localhost:3307",
+$connect = mysqli_connect("localhost",
 	"root", "", "blog_db");
 
 // Display data from geeksdata table

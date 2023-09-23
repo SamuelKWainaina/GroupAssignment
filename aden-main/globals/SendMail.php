@@ -1,7 +1,26 @@
 <?php
 class SendMail{
+<<<<<<< Updated upstream
 	public function SendeMail($details=array(), $conf){
-		if(!empty($details["sendToEmail"]) & !empty($details["sendToName"]) & !empty($details["emailSubjectLine"]) & !empty($details["emailMessage"])){
+=======
+	public function SendMail($details=array(), $conf){
+		
+
+				if (!$this->isValidEmail($details["sendToEmail"])) {
+					echo "Error: Invalid email address.";
+					return;
+				}
+		
+				// Check for missing details
+				if (empty($details["sendToEmail"]) || empty($details["sendToName"]) || empty($details["emailSubjectLine"]) || empty($details["emailMessage"])) {
+					echo "Error: Some details are missing.";
+					print_r($details);
+					return;
+				}
+
+
+>>>>>>> Stashed changes
+		if(!empty($details["sendToEmail"]) && !empty($details["sendToName"]) && !empty($details["emailSubjectLine"]) && !empty($details["emailMessage"])){
 			$headers = array(
 				'Authorization: Bearer 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',
 				'Content-Type: application/json'
@@ -9,6 +28,7 @@ class SendMail{
 
 			$data = array(
 				"personalizations" => array(
+
 					array(
 						"to" => array(
 							array(
@@ -40,8 +60,14 @@ class SendMail{
 			$response = curl_exec($ch);
 			curl_close($ch);
 		}else{
-			print "Error: Some details are missing.";
+			echo "Error: Some details are missing.";
 			print_r($details);
 		}
 		}
+		private function isValidEmail($email) {
+			return filter_var($email, FILTER_VALIDATE_EMAIL) !== false;
+		}
 	}
+	
+	
+	
